@@ -1,0 +1,514 @@
+* {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+header {
+    height: 50px;
+    border-bottom: 1px solid gray;
+    background-color: #F1F1F1;
+}
+
+header h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 50px;
+}
+
+header h1 a {
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 50px;
+    line-height: 50px;
+    color: #FF7800;
+}
+
+.select_dorks {
+    position: absolute;
+    right: 65px;
+    top: 15px;
+}
+
+.select_dorks h2 a {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: black;
+    text-decoration: none;
+}
+
+.select_dorks h2 a:hover {
+    color: #A32824;    
+}
+
+ul.dorks_menu, ul.admin_menu {
+    position: absolute;
+    right: 0;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    background-color: #F1F1F1;
+}
+
+ul.dorks_menu {
+    width: 200px;
+}
+
+ul.admin_menu {
+    width: 150px;
+}
+
+ul.dorks_menu a, ul.admin_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.dorks_menu li a, .admin_menu li a {
+    font-size: 0.75em;
+    padding: 5px;
+    display: block;
+}
+
+ul.dorks_menu li.logout {
+	border-top: 1px solid grey;
+	text-transform: uppercase;
+}
+
+ul.dorks_menu li.logout a {
+    background-color: white;
+    color: black;
+}
+
+.dorks_menu li a:hover, .admin_menu li a:hover {
+    color: black;
+    background-color: #FF7800;
+}
+
+.dorks_menu li.logout a:hover {
+    color: black;
+    background-color: #7DB31E;
+}
+.admin_dorks, .admin_things {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.admin_dorks h2, .admin_things h2 {
+    font-size: 1.25em;
+    margin-bottom: 20px;
+}
+
+.admin_table {    
+    border-collapse: collapse;
+}
+
+.admin_table th {
+    font-weight: bold;
+    text-align: left;
+    background-color: #F1F1F1;
+}
+
+.admin_table th, .admin_table td, .admin_table input {
+    height: 35px;
+    width: 200px;
+}
+
+.admin_table th, .admin_table td {
+    border: 1px solid black;
+}
+.admin_table th.admin_col, td.deletecell, td.insertcell {
+    width: 80px;
+}
+
+.admin_table th, .admin_table input {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.admin_table input {
+    font-size: 0.9em;
+}
+
+.admin_table input:focus {
+    background-color: #7DB31E;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+.favs_list {
+    float: left;
+    width: 175px;
+    margin-left: 45px;
+}
+
+.favs_list:hover {
+    cursor: pointer;
+}
+
+.favs_list h2 {
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+ul.favs {
+    width: 170px;
+}
+
+ul.favs li a {
+    display: block;
+    font-size: 0.75em;
+    text-decoration: none;
+    color: black;
+    padding: 7px 5px 7px 5px;
+}
+
+ul.favs li a:hover {
+    color: black;
+    background-color: #7DB31E;
+}
+
+.thing_list, .thing_single {
+    margin-top: 15px;
+    margin-left: 225px;
+    width: 610px;
+    border: 1px dotted gray;
+}
+
+.thing_list {
+    padding-top: 10px;
+}
+
+.welcome {
+    font-size: 0.8em;
+    text-align: justify;
+    padding: 10px 10px 20px 10px;
+    border-bottom: 1px dotted gray;
+}
+
+.thing_list h2, .thing_single h2 {
+    font-size: 1.3em;
+    padding: 5px 10px 10px 10px;
+}
+
+.thing_list ul {
+    padding-top: 20px;
+}
+
+.thing-list li {
+    padding-bottom: 10px;
+}
+
+.thing_list h3 a {
+    font-size: 1.1em;
+    color: #7DB31E;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-decoration: none;
+}
+
+.thing_list h3 a:hover {
+    color: #FF7800;
+    
+}
+
+.thumbnail {
+    width: 178px;
+    height: 100px;
+}
+
+.thing_list figcaption {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 20px;
+}
+
+.thing_list .description {
+    font-size: 0.75em;
+    width: 400px;
+    padding-right: 10px;
+}
+
+.thing_player {
+    display: block;
+    max-width:608px;
+    max-height:560px;
+    width: auto;
+    height: auto;
+}
+
+.thing_single h3 {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+.thing_single p {
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.thing_single .description {
+    font-size: 0.75em;
+    min-height: 80px;
+    text-align: justify;
+}
+
+.actions {
+    position: relative;
+    height: 37px;
+    border-bottom: 1px solid #CCC;
+}
+
+.actions .add, .actions .remove{
+    position: absolute;
+    right: 10px;
+}
+
+.actions .add p, .actions .remove p {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #999;
+}
+
+.actions .add p:hover, .actions .remove p:hover {
+    color: black;
+    border-bottom: 3px solid #FF7800;
+}
+
+.profile, .admin_button, .trash, .favorite, .admin_table .delete, .admin_table .insert, .success {
+	background-image: url(../images/sprites.png);
+	background-repeat: no-repeat;
+}
+
+.profile {
+	position: absolute;
+	right: 25px;
+	top: 10px;
+	background-position: -100px -199px ;
+	width: 30px;
+	height: 30px;	
+}
+
+.profile.logged_in {
+	background-position: -33px -199px ;
+}
+
+.profile.logged_out {
+	background-position: 0 -199px ;	
+}
+
+.admin_button {
+	position: absolute;
+	right: 10px;
+	top: 20px;
+	height: 10px;
+	width: 10px;
+}
+
+.admin_button {
+	background-position: -47px -132px ;
+}
+
+.admin_button:hover {
+	background-position: -47px -142px ;
+}
+
+.trash {
+	margin: 30px 0 30px 0;
+	padding-top: 20px;
+	background-position: 0 0;	
+	width: 60px;
+	height: 60px;
+}
+
+.trash:hover, .trash_hover {
+	background-position: 0 -61px ;
+}
+
+.favorite {
+	background-position: 0 -154px ;
+	width: 20px;
+	height: 20px;
+}
+
+.favorite:hover {
+	background-position: -21px -154px ;
+}
+
+.thing_list li {
+	position: relative;
+}
+
+.thing_list li .add {
+	position: absolute;
+	top: 10px;
+	right: 30px;
+}
+
+.admin_table .delete {
+	background-position: 0 -130px ;
+	margin-left: 40px;
+	width: 20px;
+	height: 20px;
+}
+
+.admin_table .description {
+    width: 700px;
+}
+
+.admin_table .delete:hover {
+	background-position: -21px -130px;
+}
+
+.insert {
+	background-position: 0 -177px;
+	margin-left: 40px;	
+	width: 20px;
+	height: 20px;
+}
+
+.insert:hover {
+	background-position: -21px -177px;
+}
+
+.success {
+    background-position: -42px -177px;
+}
+.admin_table .success {
+	margin-left: 40px;
+	width: 40px;
+	height: 20px;
+}
+
+.non_favs .success {
+	width: 20px;
+	height: 20px;
+}
+
+.favs .highlight {
+    background-color: #FF7800;
+    border: 1px solid #7DB31E;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    margin-top: 30px;
+}
+
+footer p {
+    line-height: 60px;
+    margin-left: 50px;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #FF7800;
+}
+
+footer a {
+    font-size: inherit;
+    color: #FF7800;
+    text-decoration: none
+}
+
+footer a:hover {
+    color: #7DB31E;
+}
+
+.bar {
+    color: #7DB31E;
+}
+
+.alert {
+   color: red;
+}
+
+.message {
+   margin-top: 40px;
+   margin-left: 50px;
+}
+
+.message h2 {
+   font-size: 1.25em;
+   font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.no_border_bottom {
+    border-bottom: none;
+}
+
+.like_none:after {
+    content:"You don't have any Favorite Things yet, so here are some things you might like. \A Click on the heart icon to add them to your Favorites.";
+    white-space: pre-wrap;
+}
+
+.like_some:after {
+    content:"Here are some things you might like. \A Click on the heart icon to add them to your Favorites.";
+    white-space: pre-wrap;
+}
+
+.like_all:after {
+    content:"You Love Everything! \A Drag items on the left to the trash can to remove them from Favorites.";
+    white-space: pre-wrap;
+}
+
+.loader_large {
+    background-image: url('../images/loader-large.png');
+    position: absolute;
+    left: 500px;
+    top: 430px;
+    height: 50px;
+    width: 50px;
+}
+
+.loader_small {
+    background-image: url('../images/loader_small.png');
+    margin-left: 40px;
+    height: 25px;
+    width: 25px;
+}
+
+.dim {
+    opacity: 0.5;
+}
+
+.noscript {
+    margin: 20px auto 20px auto;
+    padding: 20px;
+    width: 50%;
+    overflow-y: auto;
+    text-align: center;
+    background-color: #FFEFBE;
+    -webkit-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+    box-shadow: 7px 7px 5px rgba(50, 50, 50, 0.75);
+}   
+
+noscript h1 {
+    font-size: 1.3em;
+    margin-bottom: 1em;    
+}
+
+noscript p {
+    font-size: 0.9em;
+}
+
+.content {
+    display: inline-block;
+}
